@@ -13,3 +13,11 @@
 <h3> Hero Name: <%= @heroes[2].name %></h3><br>
 <h4> Hero Power: <%= @heroes[2].power %></h4><br>
 <h4> Hero Biography: <%= @heroes[2].bio %></h4><br><br>
+
+<ul>
+<% @heroes.each do |hero| %>
+  <h3> Hero Name <%= hero.name %> </h3>
+  <h4> Hero Power <%= hero.power %> </h4>
+  <h4> Hero Bio <%= hero.bio %> </h4>
+<% end %>
+</ul>
